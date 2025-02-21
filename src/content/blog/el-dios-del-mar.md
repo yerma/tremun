@@ -1,0 +1,63 @@
+---
+title: 'El Dios del Mar'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Feb 20 2025'
+heroImage: '/blog-placeholder-3.jpg'
+---
+
+Mi papá dice que todas las historias parten en Chiloé, así que nuestro primer destino tomó dirección al sur de Chile.
+
+El viaje en auto se hace cada vez más aburrido. Partimos muy temprano en la madrugada y aunque hemos parado a descansar, llevamos todo el día en un mecido y mecánico galope.
+
+Mi papá trata de contagiar su entusiasmo y me cuenta historias del lugar al que vamos.
+
+> —Aguanta Mati, ya falta poco y en Puerto Montt nos espera un barco —me dice papá mirándome por el espejo retrovisor.
+
+Una pequeña chispa de esperanza se me instala en el cuerpo, quizás este viaje no sea del todo aburrido.
+
+El viaje por mar a Ancud no fue como lo había imaginado, estuve mareada en el `ferry`, me senté en la orilla de la cubierta con la cabeza colgando hacia afuera por si vomitaba. El aire marino me hizo sentir un poco mejor y comencé a admirar mi reflejo en el agua, amé la forma de mi pelo suelto porque me hacía parecer un poco mayor. A veces quisiera tener quince y no doce para que me trataran como alguien grande.
+
+De pronto una de las olas hizo saltar el barco y fui a dar al agua. No sé nadar y aunque luché por mantenerme en la superficie entre braceo y desesperación comencé a hundirme irremediablemente. Mi respiración se detuvo y me vi cayendo hacia la profundidad oscura del océano. En ese momento sentí que alguien tomaba mi brazo y me afirmaba. No sé muy bien qué pasó, la asfixia y el terror me confundieron y sólo atiné a respirar aliviada, pero cuando exhalé millones de burbujitas me hormiguearon en la boca y escaparon `presurosas` hacia la superficie. Lancé un grito y otras tantas volvieron a salir. Estaba bajo el agua respirando sin saber cómo lo hacía.
+
+Asombrada y aturdida traté de respirar hondo por la nariz, pero no pude, fue como si hubiera intentado hacerlo con el codo o con las manos porque de algún modo sabía que mi nariz no me serviría. Fue entonces que tomé conciencia que efectivamente alguien me sostenía por el brazo y di la vuelta para ver el rostro de mi salvador. Era un joven hermoso que me tranquilizaba con su sonrisa. Me soltó con extremo cuidado e hizo un par de piruetas, como si intentara decirme que ya no corría peligro de hundirme. Noté que tenía un torso musculado y su cola era la de una foca. Una sensación de miedo o asombro recorrió mi cuerpo y se instaló como molestia en mis costillas, por lo que traté de afirmarlas, pero cuando lo hice sentí unas pequeñas grietas aladas que se movían aliviando mi necesidad de oxígeno. Me habían salido branquias de pez.
+
+El extraño ser detuvo su demostración, se instaló frente a mí y sin darme cuenta perdí el miedo.
+
+> —¿Quién eres? —le pregunté asombrada.
+> —Millalobo o lobo de oro —me respondió con una especie de `balido`.
+
+Su cuerpo estaba cubierto por un fino pelaje dorado que iluminaba la oscuridad de las aguas.
+
+> —¿Estoy soñando? —mis palabras comenzaban a tomar un tono de angustia.
+> —No, no es un sueño. Yo empujé tu barco para que cayeras al agua…
+> —¡Podría haber muerto!... —le reproché con rabia— quiero volver al `ferry` con mi papá —terminé la frase con el corazón lleno de tristeza y con los ojos repletos de lágrimas e impotencia.
+
+El Millalobo me miró durante unos segundos pensativo y me respondió.
+
+> —Yo te llevaré, pero antes requiero de tu ayuda. Acompáñame.
+
+Aunque había perdido el miedo, pensaba en mi papá aturdido y desesperado buscándome, por lo que dudé si debía acompañar al Millalobo, pero ese extraño y poderoso ser parecía leer hasta mis pensamientos.
+
+> —No te preocupes no demoraremos —comentó mirando hacia la superficie.  
+
+El camino hacia el fondo de las oscuras aguas fue extraño. Con su paso el Millalobo dejaba una `estela` dorada y su rostro ya no era el del hermoso joven que me había rescatado, ahora sus facciones eran más bien las de un lobo marino. A medida que nos sumergíamos nos encontrábamos con diferentes y extrañas criaturas marinas concentradas en sus trabajos, unas sembrando y contando mariscos y peces y otras guiando vaporosos espectros hacia alguna parte. Un murmullo frío recorrió mi espalda y me tapé los ojos aterrada.
+
+> —No te asustes, son solo los muertos del mar —me dijo el Lobo de oro y magicamente me tranquilizó.
+> —¿A dónde vamos? —le pregunté— ya quiero volver con mi papá que debe estar nervioso sin saber de mi.
+> —Mira esto —me dijo y con un gesto de su mano iluminó el fondo.
+
+La superficie de arena bajo el mar estaba sucia, latas y plásticos, mallas, basura y cosas que no logré distinguir. El Millalobo parecía entristecido, no pude evitar sentir compasión por ese imponente gigante a mi lado.
+
+> —¿Para qué necesitas mi ayuda?
+> —Tengo ayudantes para todo lo que requiero en el mar. Unos siembran mariscos y peces, guían a los muertos y equilibran la vida submarina, pero para esto no tengo nada, a nadie. Los seres humanos se han vuelto inconscientes de su propia naturaleza y temo que seguirá empeorando, necesito una guardiana en tierra —dijo y me apuntó con su cetro de oro.
+> —No puedo, soy solo una niña, nadie me escuchará, de hecho, si vuelvo a la superficie no contaré esta historia o pensarán que estoy loca.
+> —No te preocupes, yo te ayudaré, volverás a mi, cada vez que requiera de tu ayuda —sus palabras tenían el tono de un hechizo.
+
+De pronto, sin que pudiera hacer nada, una corriente de agua me subió a la superficie y salí a flote en medio de un colchón de burbujas doradas. Los buzos salvavidas me subieron a cubierta incrédulos de haberme encontrado con vida.
+
+Cuando me sacaron del agua y me pusieron en cubierta mi papá me abrazó como nunca lo había hecho. Los dos estábamos asustados, pero no me atreví a contarle lo que me había sucedido, de hecho comenzaba a creer que toda mi aventura había sido un `delirio` por la asfixia.
+
+Me instalaron en una cómoda silla y me abrigaron. En los costados del torso un `escozor` terrible me atormentaba por lo que metí la mano con cuidado y traté de rascarme, descubrí que tenía unas `protuberancias` lineales, como estrías y pude comprobar que mi aventura había sido cierta, había tenido un encuentro con el Millalobo.
+
+> —¿Qué te pasa? ¿estás bien? —me preguntó mi papá— de un segundo a otro te has puesto pálida.
+> —No te preocupes, es solo que tengo frío.

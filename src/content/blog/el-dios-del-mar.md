@@ -5,6 +5,8 @@ pubDate: 'Feb 20 2025'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 
+<dotlottie-player src="https://lottie.host/6f4ee854-3625-4849-8985-e423a0752949/hZWZsrb0zk.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" autoplay></dotlottie-player>
+
 Mi papá dice que todas las historias parten en Chiloé, así que nuestro primer destino tomó dirección al sur de Chile.
 
 El viaje en auto se hace cada vez más aburrido. Partimos muy temprano en la madrugada y aunque hemos parado a descansar, llevamos todo el día en un mecido y mecánico galope.

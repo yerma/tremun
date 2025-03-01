@@ -3,11 +3,20 @@ title: 'El Dios del Mar'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Feb 20 2025'
 heroImage: '/blog-placeholder-3.jpg'
+vocabulary:
+  "ferry": "transbordador. Embarcación que enlaza dos puntos."
+  "presurosas": "Rápidas, ligeras, veloces."
+  "balido": "Voz del carnero, el cordero, la oveja, la cabra, el gamo y el ciervo."
+  "estela": "Señal o rastro de espuma y agua removida que deja tras sí una embarcación u otro cuerpo en movimiento."
+  "escozor": "Sensación dolorosa, como la que produce una quemadura."
+  "protuberancias": "Prominencias más o menos redonda."
+  "delirio": "Desvarío, perturbación de la razón."
 ---
-
-<dotlottie-player src="https://lottie.host/6f4ee854-3625-4849-8985-e423a0752949/hZWZsrb0zk.json" background="transparent" speed="1" style="width: 300px; height: 300px" direction="1" playMode="normal" autoplay></dotlottie-player>
+import Vocabulary from '../../components/Vocabulary.astro';
 
 Mi papá dice que todas las historias parten en Chiloé, así que nuestro primer destino tomó dirección al sur de Chile.
+
+<dotlottie-player src="https://assets-v2.lottiefiles.com/a/7ab12b4a-1167-11ee-80e1-03da2ae8e225/p0jgxVbd5j.lottie" background="transparent" speed="1" style="width: 100%;" direction="1" playMode="normal" autoplay loop></dotlottie-player>
 
 El viaje en auto se hace cada vez más aburrido. Partimos muy temprano en la madrugada y aunque hemos parado a descansar, llevamos todo el día en un mecido y mecánico galope.
 
@@ -17,22 +26,27 @@ Mi papá trata de contagiar su entusiasmo y me cuenta historias del lugar al que
 
 Una pequeña chispa de esperanza se me instala en el cuerpo, quizás este viaje no sea del todo aburrido.
 
-El viaje por mar a Ancud no fue como lo había imaginado, estuve mareada en el `ferry`, me senté en la orilla de la cubierta con la cabeza colgando hacia afuera por si vomitaba. El aire marino me hizo sentir un poco mejor y comencé a admirar mi reflejo en el agua, amé la forma de mi pelo suelto porque me hacía parecer un poco mayor. A veces quisiera tener quince y no doce para que me trataran como alguien grande.
+El viaje por mar a Ancud no fue como lo había imaginado, estuve mareada en el <Vocabulary definition={frontmatter.vocabulary.ferry}>ferry</Vocabulary>, me senté en la orilla de la cubierta con la cabeza colgando hacia afuera por si vomitaba. El aire marino me hizo sentir un poco mejor y comencé a admirar mi reflejo en el agua, amé la forma de mi pelo suelto porque me hacía parecer un poco mayor. A veces quisiera tener quince y no doce para que me trataran como alguien grande.
 
-De pronto una de las olas hizo saltar el barco y fui a dar al agua. No sé nadar y aunque luché por mantenerme en la superficie entre braceo y desesperación comencé a hundirme irremediablemente. Mi respiración se detuvo y me vi cayendo hacia la profundidad oscura del océano. En ese momento sentí que alguien tomaba mi brazo y me afirmaba. No sé muy bien qué pasó, la asfixia y el terror me confundieron y sólo atiné a respirar aliviada, pero cuando exhalé millones de burbujitas me hormiguearon en la boca y escaparon `presurosas` hacia la superficie. Lancé un grito y otras tantas volvieron a salir. Estaba bajo el agua respirando sin saber cómo lo hacía.
+
+<div class="under-sea">
+
+De pronto una de las olas hizo saltar el barco y fui a dar al agua. No sé nadar y aunque luché por mantenerme en la superficie entre braceo y desesperación comencé a hundirme irremediablemente. Mi respiración se detuvo y me vi cayendo hacia la profundidad oscura del océano. En ese momento sentí que alguien tomaba mi brazo y me afirmaba. No sé muy bien qué pasó, la asfixia y el terror me confundieron y sólo atiné a respirar aliviada, pero cuando exhalé millones de burbujitas me hormiguearon en la boca y escaparon <Vocabulary definition={frontmatter.vocabulary.presurosas}>presurosas</Vocabulary> hacia la superficie. Lancé un grito y otras tantas volvieron a salir. Estaba bajo el agua respirando sin saber cómo lo hacía.
+
+<dotlottie-player src="https://assets-v2.lottiefiles.com/a/f08a0fd4-1163-11ee-b7da-a3beb8c6f335/dn9M71CcHO.lottie" background="transparent" speed="1" style="width: 100vw; margin: -122% -52% -30%; position: relative; z-index: -1" direction="1" playMode="normal" autoplay loop></dotlottie-player>
 
 Asombrada y aturdida traté de respirar hondo por la nariz, pero no pude, fue como si hubiera intentado hacerlo con el codo o con las manos porque de algún modo sabía que mi nariz no me serviría. Fue entonces que tomé conciencia que efectivamente alguien me sostenía por el brazo y di la vuelta para ver el rostro de mi salvador. Era un joven hermoso que me tranquilizaba con su sonrisa. Me soltó con extremo cuidado e hizo un par de piruetas, como si intentara decirme que ya no corría peligro de hundirme. Noté que tenía un torso musculado y su cola era la de una foca. Una sensación de miedo o asombro recorrió mi cuerpo y se instaló como molestia en mis costillas, por lo que traté de afirmarlas, pero cuando lo hice sentí unas pequeñas grietas aladas que se movían aliviando mi necesidad de oxígeno. Me habían salido branquias de pez.
 
 El extraño ser detuvo su demostración, se instaló frente a mí y sin darme cuenta perdí el miedo.
 
 > —¿Quién eres? —le pregunté asombrada.
-> —Millalobo o lobo de oro —me respondió con una especie de `balido`.
+> —Millalobo o lobo de oro —me respondió con una especie de <Vocabulary definition={frontmatter.vocabulary.balido}>balido</Vocabulary>.
 
 Su cuerpo estaba cubierto por un fino pelaje dorado que iluminaba la oscuridad de las aguas.
 
 > —¿Estoy soñando? —mis palabras comenzaban a tomar un tono de angustia.
 > —No, no es un sueño. Yo empujé tu barco para que cayeras al agua…
-> —¡Podría haber muerto!... —le reproché con rabia— quiero volver al `ferry` con mi papá —terminé la frase con el corazón lleno de tristeza y con los ojos repletos de lágrimas e impotencia.
+> —¡Podría haber muerto!... —le reproché con rabia— quiero volver al <Vocabulary definition={frontmatter.vocabulary.ferry}>ferry</Vocabulary> con mi papá —terminé la frase con el corazón lleno de tristeza y con los ojos repletos de lágrimas e impotencia.
 
 El Millalobo me miró durante unos segundos pensativo y me respondió.
 
@@ -42,7 +56,6 @@ Aunque había perdido el miedo, pensaba en mi papá aturdido y desesperado busc�
 
 > —No te preocupes no demoraremos —comentó mirando hacia la superficie.  
 
-El camino hacia el fondo de las oscuras aguas fue extraño. Con su paso el Millalobo dejaba una `estela` dorada y su rostro ya no era el del hermoso joven que me había rescatado, ahora sus facciones eran más bien las de un lobo marino. A medida que nos sumergíamos nos encontrábamos con diferentes y extrañas criaturas marinas concentradas en sus trabajos, unas sembrando y contando mariscos y peces y otras guiando vaporosos espectros hacia alguna parte. Un murmullo frío recorrió mi espalda y me tapé los ojos aterrada.
 
 > —No te asustes, son solo los muertos del mar —me dijo el Lobo de oro y magicamente me tranquilizó.
 > —¿A dónde vamos? —le pregunté— ya quiero volver con mi papá que debe estar nervioso sin saber de mi.
@@ -55,11 +68,14 @@ La superficie de arena bajo el mar estaba sucia, latas y plásticos, mallas, bas
 > —No puedo, soy solo una niña, nadie me escuchará, de hecho, si vuelvo a la superficie no contaré esta historia o pensarán que estoy loca.
 > —No te preocupes, yo te ayudaré, volverás a mi, cada vez que requiera de tu ayuda —sus palabras tenían el tono de un hechizo.
 
+
+</div>
+
 De pronto, sin que pudiera hacer nada, una corriente de agua me subió a la superficie y salí a flote en medio de un colchón de burbujas doradas. Los buzos salvavidas me subieron a cubierta incrédulos de haberme encontrado con vida.
 
-Cuando me sacaron del agua y me pusieron en cubierta mi papá me abrazó como nunca lo había hecho. Los dos estábamos asustados, pero no me atreví a contarle lo que me había sucedido, de hecho comenzaba a creer que toda mi aventura había sido un `delirio` por la asfixia.
+Cuando me sacaron del agua y me pusieron en cubierta mi papá me abrazó como nunca lo había hecho. Los dos estábamos asustados, pero no me atreví a contarle lo que me había sucedido, de hecho comenzaba a creer que toda mi aventura había sido un <Vocabulary definition={frontmatter.vocabulary.delirio}>delirio</Vocabulary> por la asfixia.
 
-Me instalaron en una cómoda silla y me abrigaron. En los costados del torso un `escozor` terrible me atormentaba por lo que metí la mano con cuidado y traté de rascarme, descubrí que tenía unas `protuberancias` lineales, como estrías y pude comprobar que mi aventura había sido cierta, había tenido un encuentro con el Millalobo.
+Me instalaron en una cómoda silla y me abrigaron. En los costados del torso un <Vocabulary definition={frontmatter.vocabulary.escozor}>escozor</Vocabulary> terrible me atormentaba por lo que metí la mano con cuidado y traté de rascarme, descubrí que tenía unas <Vocabulary definition={frontmatter.vocabulary.protuberancias}>protuberancias</Vocabulary> lineales, como estrías y pude comprobar que mi aventura había sido cierta, había tenido un encuentro con el Millalobo.
 
 > —¿Qué te pasa? ¿estás bien? —me preguntó mi papá— de un segundo a otro te has puesto pálida.
 > —No te preocupes, es solo que tengo frío.

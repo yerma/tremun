@@ -1,0 +1,39 @@
+---
+interface Props {
+  definition: string;
+}
+
+const { definition } = Astro.props;
+---
+
+<span class="vocabulary-word" title={definition}>
+  <slot />
+  <span class="tooltip">{definition}</span>
+</span>
+
+<style>
+  .vocabulary-word {
+    position: relative;
+    border-bottom: 1px dashed #666;
+    cursor: help;
+  }
+
+  .tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  .vocabulary-word:hover .tooltip {
+    visibility: visible;
+  }
+</style> 

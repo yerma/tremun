@@ -31,9 +31,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.prose {
 				width: 100vw;
-				/*max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;*/
 				color: rgb(var(--gray-dark));
 			}
 
@@ -41,7 +38,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				margin-bottom: 1em;
 				width: 720px;
 				max-width: calc(100% - 2em);
-				margin: auto;
+				margin: 0 auto 32px;
 			}
 
 			.title {
@@ -61,12 +58,77 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				font-style: italic;
 			}
 
-			.under-sea {
-				margin-top: 40px;
-				background: rgb(125,176,234);
-				background: linear-gradient(0deg, rgba(125,176,234,1) 80%, rgba(255,255,255,0) 80%);
+			:global(.under-sea) {
+				background: rgb(25,63,87);
+				background: linear-gradient(0deg, rgba(25,63,87,1) 40%, rgba(39,93,113,1) 100%);
 				margin-bottom: 40px;
-				padding-bottom: 40px;
+				padding-bottom: 200px;
+				color: white;
+				position: relative;
+			}
+
+			:global(.under-sea .sand) {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100vw;
+			}
+
+			:global(.under-sea *:not(.sand, .trash)) {
+				position: relative;
+				z-index: 2;
+			}
+
+			:global(.under-sea .trash) {
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+				animation: fall 15s ease-out infinite;
+				transition: all 0.5s ease-out;
+				opacity: 0;
+			}
+
+			:global(.under-sea .trash:nth-of-type(1)) {
+				left: 10%;
+				animation-delay: 0s;
+			}
+			:global(.under-sea .trash:nth-of-type(2)) {
+				left: 60%;
+				animation-delay: 2s;
+			}
+			:global(.under-sea .trash:nth-of-type(3)) {
+				left: 50%;
+				animation-delay: 4s;
+			}
+			:global(.under-sea .trash:nth-of-type(4)) {
+				left: 30%;
+				animation-delay: 8s;
+			}
+			:global(.under-sea .trash:nth-of-type(5)) {
+				left: 20%;
+				animation-delay: 10s;
+			}
+			:global(.under-sea .trash:nth-of-type(6)) {
+				left: 40%;
+				animation-delay: 12s;
+			}
+
+			@keyframes fall {
+				0% {
+					bottom: 50%;
+					opacity: 0;
+					transform: rotate(-40deg);
+				}
+
+				30% {
+					opacity: 0;
+				}
+
+				100% {
+					bottom: 10px;
+					opacity: 1;
+					transform: rotate(40deg);
+				}
 			}
 		</style>
 	</head>

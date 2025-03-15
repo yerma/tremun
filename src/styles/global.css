@@ -92,7 +92,7 @@ p {
 	margin-bottom: 2em;
 	width: 720px;
 	max-width: calc(100% - 2em);
-	margin: auto;
+	margin: 0 auto 32px;
 }
 textarea {
 	width: 100%;
@@ -122,10 +122,10 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--accent);
-	padding: 0 8px 0 20px;
+	padding: 0 16px;
 	margin: 40px auto;
 	font-size: 1em;
+	font-style: italic;
 
 	width: 720px;
 	max-width: calc(100% - 2em);

@@ -8,6 +8,8 @@ const material = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
+		collection: z.string().optional(),
+		order: z.number(),
 		// Transform string to Date object
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),

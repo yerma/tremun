@@ -1,24 +1,56 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION, COLLECTIONS } from '../../consts';
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_DESCRIPTION, COLLECTIONS } from '../../../consts';
+import { getCollection } from 'astro:content';
 
-const collections = COLLECTIONS.map((collection) => ({
-	slug: collection.slug,
-	title: collection.title,
-}));
+export async function getStaticPaths() {
+	return COLLECTIONS.map((collection) => ({
+		params: { collection: collection.slug },
+	}));
+}
 
+const posts = (await getCollection('material',
+	(entry) => entry.data.collection === Astro.params.collection))
+.sort(
+	(a, b) => a.data.order - b.data.order,
+);
+
+const collectionTitle = COLLECTIONS.find((c) => c.slug === Astro.params.collection)?.title;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={`${collectionTitle} | Tremün`} description={SITE_DESCRIPTION} />
 		<style>
 			main {
 				width: 960px;
 			}
+
+			.title {
+				display: flex;
+				align-items: center;
+				gap: 0.5em;
+			}
+
+			.item-order {
+				background: var(--accent);
+				color: white;
+				border-radius: 50%;
+				font-size: 0.8em;
+				font-weight: 400;
+				line-height: 1;
+				height: 24px;
+				width: 24px;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				margin-right: 0.5em;
+				padding: 4px;
+			}
+
 			ul {
 				display: flex;
 				flex-wrap: wrap;
@@ -84,11 +116,14 @@ const collections = COLLECTIONS.map((collection) => ({
 			<section>
 				<ul>
 					{
-						collections.map((collection) => (
+						posts.map((post) => (
 							<li>
-								<a href={`/tremun/material/${collection.slug}/`}>
+								<a href={`/tremun/material/${post.data.collection}/${post.id}/`}>
 									{/* <img width={720} height={360} src={post.data.heroImage} alt="" /> */}
-									<h4 class="title">{collection.title}</h4>
+									<h4 class="title">
+										<span class="item-order">{post.data.order}</span>
+										{post.data.title}
+									</h4>
 								</a>
 							</li>
 						))

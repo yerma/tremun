@@ -3,3 +3,7 @@
 
 export const SITE_TITLE = 'Tremün';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
+
+export const COLLECTIONS = [
+  { slug: "una-aventura-de-leyenda", title: "Una aventura de leyenda" },
+];

@@ -8,4 +8,7 @@ export default defineConfig({
 	site: 'https://yerma.github.io',
 	base: '/tremun',
 	integrations: [mdx(), sitemap()],
+	redirects: {
+		'/material/el-dios-del-mar': '/tremun/material/una-aventura-de-leyenda/el-dios-del-mar/',
+	},
 });

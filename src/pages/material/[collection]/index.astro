@@ -1,0 +1,134 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_DESCRIPTION, COLLECTIONS } from '../../../consts';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+	return COLLECTIONS.map((collection) => ({
+		params: { collection: collection.slug },
+	}));
+}
+
+const posts = (await getCollection('material',
+	(entry) => entry.data.collection === Astro.params.collection))
+.sort(
+	(a, b) => a.data.order - b.data.order,
+);
+
+const collectionTitle = COLLECTIONS.find((c) => c.slug === Astro.params.collection)?.title;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`${collectionTitle} | Tremün`} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+
+			.title {
+				display: flex;
+				align-items: center;
+				font-size: 1.5em;
+				gap: 0.5em;
+				margin: 40px 0;
+				color: gray;
+			}
+
+			.item-order {
+				color: rgba(from var(--accent) r g b / 0.2);
+				font-size: 10em;
+				font-weight: 400;
+				line-height: 1;
+				position: absolute;
+				top: 50%;
+    		transform: translateY(-45%);
+			}
+
+			ul {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 16px;
+				list-style-type: none;
+				margin: 40px 0;
+				padding: 0;
+			}
+
+			ul li {
+				padding: 16px;
+				border: 1px solid var(--accent);
+				border-radius: 4px;
+				background: rgba(from var(--accent) r g b / 0.1);
+				min-height: 9em;
+				display: flex;
+				align-items: center;
+				position: relative;
+				
+			}
+			ul li * {
+				text-decoration: none;
+				transition: 0.2s ease;
+			}
+			ul li img {
+				margin-bottom: 0.5rem;
+				border-radius: 12px;
+			}
+			ul li a {
+				display: block;
+			}
+			.date {
+				margin: 0;
+				color: rgb(var(--gray));
+			}
+			ul li a:hover h4,
+			ul li a:hover .date {
+				color: rgb(var(--accent));
+			}
+			ul a:hover img {
+				box-shadow: var(--box-shadow);
+			}
+			@media (max-width: 720px) {
+				ul {
+					gap: 0.5em;
+				}
+				ul li {
+					width: 100%;
+					text-align: center;
+				}
+				ul li:first-child {
+					margin-bottom: 0;
+				}
+				ul li:first-child .title {
+					font-size: 1.563em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section>
+				<h1 class="title">{collectionTitle}</h1>
+				<ul>
+					{
+						posts.map((post) => (
+							<li>
+								<a href={`/tremun/material/${post.data.collection}/${post.id}/`}>
+									{/* <img width={720} height={360} src={post.data.heroImage} alt="" /> */}
+									<span class="item-order">{post.data.order}</span>
+									<h4 class="item-title">
+										{post.data.title}
+									</h4>
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

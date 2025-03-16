@@ -2,13 +2,13 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, COLLECTIONS } from '../../consts';
 
-const posts = (await getCollection('material')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const collections = COLLECTIONS.map((collection) => ({
+	slug: collection.slug,
+	title: collection.title,
+}));
+
 ---
 
 <!doctype html>
@@ -84,14 +84,11 @@ const posts = (await getCollection('material')).sort(
 			<section>
 				<ul>
 					{
-						posts.map((post) => (
+						collections.map((collection) => (
 							<li>
-								<a href={`/tremun/material/${post.id}/`}>
+								<a href={`/tremun/material/${collection.slug}/`}>
 									{/* <img width={720} height={360} src={post.data.heroImage} alt="" /> */}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
+									<h4 class="title">{collection.title}</h4>
 								</a>
 							</li>
 						))
